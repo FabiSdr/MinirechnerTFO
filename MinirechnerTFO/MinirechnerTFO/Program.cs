@@ -24,6 +24,9 @@ namespace MinirechnerTFO
             int ErgMultiplikation = Multipliziere(Zahl1, Zahl2);
             Console.WriteLine("Zahl1 * Zahl2 = " + ErgMultiplikation);
 
+            int ErgDivision = Dividiere(Zahl1, Zahl2);
+            Console.WriteLine("Zahl1 / Zahl2 = " + ErgDivision);
+
             Console.ReadKey();
         }
 
@@ -43,6 +46,12 @@ namespace MinirechnerTFO
         {
             int Erg = Zahl1 * Zahl2;
             return Erg;
+        }
+
+        static int Dividiere(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 / Zahl2;
+            return Erg;  
         }
     }
 }
