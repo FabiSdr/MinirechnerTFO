@@ -21,6 +21,9 @@ namespace MinirechnerTFO
             int ErgSubtraktion = Subtrahiere(Zahl1, Zahl2);
             Console.WriteLine("Zahl1 - Zahl2 = " + ErgSubtraktion);
 
+            int ErgMultiplikation = Multipliziere(Zahl1, Zahl2);
+            Console.WriteLine("Zahl1 * Zahl2 = " + ErgMultiplikation);
+
             Console.ReadKey();
         }
 
@@ -33,6 +36,12 @@ namespace MinirechnerTFO
         static int Subtrahiere(int Zahl1, int Zahl2)
         {
             int Erg = Zahl1 - Zahl2;
+            return Erg;
+        }
+
+        static int Multipliziere(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 * Zahl2;
             return Erg;
         }
     }
