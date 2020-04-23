@@ -16,13 +16,23 @@ namespace MinirechnerTFO
             int Zahl2 = Convert.ToInt32(Console.ReadLine());
 
             int ErgAddition = Addiere(Zahl1, Zahl2);
-            Console.WriteLine("Zahl1+Zahl2= " + ErgAddition);
+            Console.WriteLine("Zahl1 + Zahl2 = " + ErgAddition);
+
+            int ErgSubtraktion = Subtrahiere(Zahl1, Zahl2);
+            Console.WriteLine("Zahl1 - Zahl2 = " + ErgSubtraktion);
+
             Console.ReadKey();
         }
 
         static int Addiere(int Zahl1, int Zahl2)
         {
             int Erg = Zahl1 + Zahl2;
+            return Erg;
+        }
+
+        static int Subtrahiere(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 - Zahl2;
             return Erg;
         }
     }
